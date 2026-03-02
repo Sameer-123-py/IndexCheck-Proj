@@ -1,17 +1,19 @@
 # IndexCheck-Proj
 
-A powerful Django-based web application that automatically generates professional, structured ETF and stock descriptions using OpenAI's GPT models. Simply upload your Excel file, and let AI do the rest!
+A powerful Django-based web application that automatically generates professional, structured ETF and stock descriptions using AI. Supports both **OpenAI** and **Harvey AI**. Simply upload your Excel file, and let AI do the rest!
 
 ## ✨ Features
 
 - 📤 **Easy Upload** - Drag and drop or select Excel files
-- 🤖 **AI-Powered** - Generates detailed financial descriptions using GPT-4o-mini
+- 🤖 **AI-Powered** - Generates detailed financial descriptions using OpenAI or Harvey AI
+- 🔄 **Multi-Provider Support** - Switch between OpenAI and Harvey AI easily
 - 📋 **Batch Processing** - Process multiple instruments in one go
 - 💾 **Excel Integration** - Reads from Column A, writes to Column B
 - 🎯 **Structured Output** - Consistent, professional formatting
 - 🔒 **Secure** - API keys stored in environment variables
 - 📱 **Responsive UI** - Clean, modern web interface
 - 🚀 **Fast Processing** - Parallel processing for speed
+- 🔁 **Auto-Retry** - Automatic retry logic for failed requests (Harvey AI)
 
 ## 📋 How It Works
 
@@ -31,7 +33,7 @@ A powerful Django-based web application that automatically generates professiona
 
 ### Prerequisites
 - Python 3.8 or higher
-- OpenAI API Key
+- OpenAI API Key **OR** Harvey AI API Key
 - Git (optional)
 
 ### Installation
