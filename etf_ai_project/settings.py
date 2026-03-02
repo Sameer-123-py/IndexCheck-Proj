@@ -11,9 +11,14 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Load environment variables from .env file
+load_dotenv(BASE_DIR / '.env')
 
 
 # Quick-start development settings - unsuitable for production
@@ -126,5 +131,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+# AI Configuration
+# Supported providers: 'openai' or 'harvey'
+AI_PROVIDER = 'harvey'  # Change to 'openai' to use OpenAI instead
+
+# OpenAI Configuration (if using OpenAI)
 OPENAI_API_KEY = "Enter Key here"
 
+# Harvey AI Configuration
+# Set these environment variables before running:
+# - HARVEY_API_KEY (required)
+# - HARVEY_BASE_URL (optional, defaults to https://eu.api.harvey.ai)
+# - HARVEY_TIMEOUT (optional, defaults to 240 seconds)

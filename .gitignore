@@ -1,0 +1,9 @@
+.env
+media/*
+db.sqlite3 
+core/services/__pycache__/
+core/harvey_agent/__pycache__/*
+etf_ai_project/migrations/*
+core/migrations/__pycache__/*
+core/__pycache__/*
+etf_ai_project/__pycache__/*
